@@ -83,13 +83,6 @@ function activeHeader () {
             textAlign: 'center'
         }, 1000);
     }    
-
-    if (activeScrollPosition > window.innerWidth*4.5){
-        $('.headingFinal').animate({
-            opacity: '1',
-            textAlign: 'center'    
-        }, 1000);
-    }
 };
 
 // This function gives the sliding menu its animation
@@ -110,7 +103,7 @@ function sideMenuAnimation() {
     $('.menuText').show();
     $('.menuOption').show();
     }
-
+//the functions for console logging the side menu 
 };
 function sideMenuExtend () {
     console.log('Class has been added')                    
