@@ -113,7 +113,7 @@ header {
     padding-left: 3vw;
 }
 
-.heading2020, .heading2030, .heading2040, .heading2050, .headingFinal{
+.heading2020, .heading2030, .heading2040, .heading2050{
     font-size: 2vw;
     margin-top: 3vh;
     opacity: 0;
@@ -132,7 +132,7 @@ header {
     left: 10vw;
     padding: 3vh 1.5vw 2vh 1.5vw;
 }
-
+/*the info box that is up when first loading the section*/
 .info2020, .info2030, .info2040, .info2050 {
     margin-top: 20vh;
     margin-left: 30vw;
@@ -155,14 +155,14 @@ header {
     cursor: pointer;
     pointer-events: auto; 
 }
-
+/* This is the hover css for those click elements*/
 .covidClick:hover, .temp2027Click:hover, .blackSummerClick:hover, .sydneyRenewablesClick:hover,
 .melbourneClick:hover, .olympicsClick:hover, .populationClick:hover, .worldPop9BilClick:hover,
 .submarinesClick:hover,.powerPlantClick:hover, .singularityClick:hover, .carbonClick:hover, 
 .worldPop10BilClick:hover {
     background-color: rgb(213, 235, 255)
 }
-
+/* all of the ids (#) are the information boxes and all the classes (.) are the "buttons"*/
 #blackSummerInfo {
     background-color: rgba(165, 165, 165, 0.6);
     border-radius: 1vw;
