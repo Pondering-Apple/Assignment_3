@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Horizontal Scrolling Page</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="script.js" defer></script>
+  </head> 
+
+  <body>
+    <!-- This is the menu that slides down -->
+    <nav id="sideMenu" class="sideMenu">
+      <div id="menuSelects">
+
+        <a href="#section2020" class="menuOption"> <h1 id="text2020Click" class="menuText" onclick="
+          text2020Click()
+        "> 2020 </h1></a>
+
+        <a href="#section2030" class="menuOption"> <h1 class="menuText" onclick="
+          text2030Click()
+          $('#brisbaneOlympics, #submarinesArrive, #population30Mil, #sydneyRenewables, #worldPop9Bil, #melbourneSydney').hide();
+        "> 2030 </h1></a>
+
+        <a href="#section2040" class="menuOption"> <h1 class="menuText" onclick="
+          text2040Click()
+        "> 2040 </h1></a>
+
+        <a href="#section2050" class="menuOption"> <h1 class="menuText" onclick="
+          text2050Click()
+        "> 2050 </h1></a>
+
+        <div></div>
+
+      </div>
+    </nav>
+    <div class="background"></div>
+    <div class="container">
+      <div class="content">
+
+        <div class="section">
+          <header class="sectionHeading"></header>
+          
+          <div class="section3Information">
+            <p class="pageHeading">Current Australia Compared to Future Australia</p>
+          </div>
+
+          <p class="introPageInfo">
+            What does the future hold? That is the Question.
+            <br> 
+            If only we had time travel we could answer that question. This website has pulled information 
+            from various different sources that have attempted to predict the future and put it on a timeline.
+            <br>
+            The events on the timeline give the indication that Australia not only still exists, but that it is destroying
+            rather well. It is growing and adapting to the times and should remain a strong economy of the future.
+            <br>
+            <br>
+            Click on the events on the timeline to learn more about whats to come
+            <br>
+          </p>
+
+        </div>
+        <hr class="timelineLine">
+      </div>
+
+      <div id="section2020" class="section">
+        <p class="heading2020"> Australia in 2020</p>
+
+        <p class="info2020"> 
+          <b>2020s</b>
+          <br>
+          At the time of this page releasing, we have already lived through a third of the 20s. 
+          <br>
+          It started with 
+          one of the worst years for Australia, with the record breaking summer causing Black Summer Bush Fires, and 
+          <br>
+          Covid 19, and then record breaking rain in most parts of Australia
+        </p>
+
+        <p id="blackSummerInfo">
+          <b>2019-2020</b>
+          <br>
+          Black Summer Bush Fires ended the previous decade and began the new one in an unforgettable way. Starting in June of
+          2019 and ending in May 2020, it was the most worst fire season in Australian History, destroying an estimated 243,000
+          square kilometers. 
+          <br>
+          It claimed an estimated 3 billion animals, driving some to extinction. So much smoke was created from 
+          the fires that it started effecting the weather of other continents.
+        </p>
+        <p id="covidInfo" >
+          <b>2019-2022</b>
+          <br>
+          COVID 19 Pandemic. This pandemic was alerted to the WHO in 2019 but wasn't declared a pandemic until
+          March of 2020. It was one of the largest and deadliest pandemics since the Spanish Flu in 1918. Australia,
+          like the rest of the world, was completely closed down, and it became a very lonely and difficult period for some.
+          <br>
+          We also had our own screw ups and difficulties with the pandemic, having a 0 covid policy that you could argue, hurt
+          the country more than it helped.
+        </p>
+
+        <p id="globalWarming2027">
+          <b>2027</b>  
+          <br>
+          This is when the world is likely to breach an everage temperature increase of 1.5 degrees Celcius.
+          This increase will have a dramatic effect on the world, especially Australia. With vast deserts and very hot summers, this 
+          will worsen under the effects of climate change, with summers worse than that of 2019-2020 expected to come.
+          <br>
+          The Great barrier reef is a part of australia that will definitley feel the worsening effects of climate change if nothing is done.
+        </p>
+
+        <span class="blackSummerClick" onclick="
+          blackSummerMove()
+        "> Black Summer </span>
+
+        <span class="covidClick" onclick="
+          covidMove()
+        "> Covid Pandemic </span>
+
+        <span class="temp2027Click" onclick="
+          temp2027Move()
+        "> 1.5 degrees in 2027 </span>
+
+      </div>
+
+      <div id="section2030" class="section">
+        <p class="heading2030"> Australia in 2030</p>
+
+        <p class="info2030">
+          <b>2030s</b>
+          <br>
+          By looking at the predictions, the 2030s of Australia look to be very interesting and a good time for Australia.
+          With large events like the Olympics coming and with major steps in technology and becoming a greener nation 
+          expected to happen.
+          Although, even though it looks to be a promissing decade for australia, by 2030, 
+        </p>
+
+        <p id="sydneyRenewables">
+          <b>2030</b>
+          <br>
+          By 2030, it is exepcted that the majority of energy generated for Sydney is from renewables sources,
+          mainly from Solar panels. This is a big step in the right direction towards a greener Australia.
+        </p>
+
+        <p id="melbourneSydney">
+          <b>2032</b>
+          <br>
+          Melbourne should overtake Sydney as Australias most populous city. Sydney has has had this title since taking
+          it from Melbourne in 1905. However depending on how you measure Sydney and Melbourne, Melbourne already holds
+          this title and has until 2019. This is because of the classification of what is Greater Sydney, including some
+          of the South Coast.
+        </p>
+
+        <p id="brisbaneOlympics">
+          <b>2032</b>
+          <br>
+          The Olympic and Paralympic games will come to Australia again in with the Brisbane Olympics and Paralympics Games in 
+          2032. It would of been 32 years since the Olympics were last in Australia. It is an event that is more than welcome 
+          to Australia as it will bring enormous amounts of tourism and greatly boost the Australian economy.
+        </p>
+
+        <p id="population30Mil">
+          <b>2033</b>
+          <br>
+          Australia has reached the population milestone of 30 million people. This milestone is expected to take place between 
+          2032 and 2033. It would be almost 30 years since Australia reached the milestone of 20 million people 2004
+        </p>
+
+        <p id="worldPop9Bil">
+          <b>2037</b>
+          <br>
+          According to the United Nations Population Division, 2037 is when the world will reach 9 billion people. This comes 15 years
+          after the world reached 8 billion people
+        </p>
+
+        <span class="sydneyRenewablesClick" onclick="
+          sydneyRenewablesMove()
+        ">Greener Sydney</span>
+
+        <span class="melbourneClick" onclick="
+          melbourneMove()
+        ">Melbourne Vs Sydney</span>  
+
+        <span class="olympicsClick" onclick="
+          olympicsMove()
+        ">Olympics</span>
+
+        <span class="populationClick" onclick="
+          populationMove()
+        "> 30 Million</span>
+        
+        <span class="worldPop9BilClick" onclick="
+          worldPop9BilMove()
+          ">9 Billion </span>
+      </div>
+
+
+      <div id="section2040" class="section">
+        <p class="heading2040"> Australia in 2040</p>
+
+        <p class="info2040">
+          <b>2040s</b>
+          <br>
+          The 2040s, again look to be a very intersting period of time. With the possibitlity of an AI takeover
+          (not really but kinda) that will change the world, and Australia continuing to make big steps in become a greener nation
+          eventually becoming carbon Neutral
+        </p>
+
+        <p id="submarinesArrive">
+          <b>2040s</b>
+          <br>
+          The very controversial topic of the Nuclear Submarines is expected to be delivered to Australia by the early 2040s.
+          They will be out of date by the time they arrive in Australia, but at least we have nuclear submarines right.
+        </p>
+
+        <p id="coalPowerPlant">
+          <b>By 2040</b>
+          <br>
+          Almost two thirds of Australias coal fire power plants be shut down. This is another big step 
+          in making Australia greener, as well as energy more affordable (possibly unlike other commodities around the world 
+          at this time).
+        </p>
+
+        <p id="aiSingularity">
+          <b>2045</b>
+          <br>
+          This could be a massive year for AI and the human race. This is when the AI Singularity is 
+          expected to of happened by. 50% of AI researches from a study of over 500 think that this is when it will happen. 
+          According to science fiction, this could bring about the end of the human race as AI take over Terminator style. What 
+          it more likely means for the world is more advancements in technology, science and more time for humans to do other things.
+        </p>
+
+        <span class="submarinesClick" onclick="
+          submarinesMove()
+        ">French Submarines</span>
+
+        <span class="powerPlantClick" onclick="
+          powerPlantMove()
+        ">Power Plants</span>
+
+        <span class="singularityClick" onclick="
+          singularityMove()
+        ">The Singularity</span>
+
+
+      </div>
+
+      <div id="section2050" class="section">
+        <p class="heading2050"> Australia in 2050 </p>
+
+        <p class="info2050"> 
+          <b>2050s</b>
+          <br>
+          The 2050s seem so far away right now, this makes it extremely difficult to predict what Australia will be like with some degree
+          of accuracy. We can only make accurate assumptions about the future with the policies or goals that are put in place by government.
+         </p>
+
+        <p id="carbonNeutral">
+          <b>2050</b>
+          <br>
+          This is the year that the Australian government aims to be net carbon neutral by. This doesn't mean we produce 0 carbon, it just means 
+          we produce enough carbon that we can offset it so it doesn't contribute to climate change. This is a massive milestone for Australia
+          and could bring about an amazing future for australia we think of when we think about the future. We no longer directly contribute to 
+          climate change, we can focus on other problems of the future that will inevitably arise.
+        </p>
+
+        <p id="worldPop10Bil">
+          <b>2058</b>
+          <br>
+          According to the United Nations Population Division, 2058 is when the world will reach the Population of 10 billion people. 21 years after 
+          the world reached 9 billion. This shows that the rate at which the worlds population is growing, is decreasing.
+        </p>
+
+
+        <span class="carbonClick" onclick="
+          carbonMove()
+        ">Carbon Neutral</span>
+
+        <span class="worldPop10BilClick" onclick="
+          worldPop10BilMove()
+        ">10 Billion</span>
+
+      </div>
+
+      <!-- <div class="section">
+        <p class="headingFinal">Future Australia</p>
+        <p class="australiaFuture">
+          Based on predictions Australia of 2050 looks to have developed a lot. A green country that produces net 0 carbon, Australia has the tools and resources
+          to thrive in the future and bring some of these predictions true, if we chose to. If Australia wants to remain one of the richest countries in the world,
+          we must.
+        </p>
+      </div> -->
+
+    </div>
+  </body>
+</html>
